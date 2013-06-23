@@ -37,6 +37,7 @@ Simple example of game object class:
     Car.prototype['sync'] = ['x', 'y'];
 
 To run game server it`s enought to have 4 lines of code on server side:
+
     var tsjs = require('../../../dist/tsserver');
     var server = tsjs.Server.createServer('3000');
     server.gameClasses['Car'] = require('../universal/car').Car;
