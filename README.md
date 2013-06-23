@@ -11,6 +11,7 @@ BTW racing example uses only 20 lines of networking code.
 Getting started
 ---------------
 Simpliest client scene initialization code is:
+______________________________________________
 
     //Creating new Telekinesis client
     var tsClient = new tsjs.Client('localhost', 3000);
@@ -29,6 +30,7 @@ To run game server it`s enought to have 4 lines of code on server side:
     var server = tsjs.Server.createServer('3000');
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
+
 
 - All game classes that contains game logic have to be universal for server and client;-
 - When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;-
