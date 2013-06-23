@@ -63,3 +63,5 @@ Example class represents game player:
 
     Car.prototype['enumerable'] = ['x', 'y', 'speed'];
     Car.prototype['sync'] = ['x', 'y'];
+    
+You can continue with launching and exploring racing example.
