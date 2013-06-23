@@ -9,10 +9,9 @@ It`s easy way to build structured and well syncronized client-server games.
 BTW racing example uses only 20 lines of networking code.
 
 Getting started
----------------
-Simpliest client scene initialization code is:
-______________________________________________
-
+===============
+Client scene initialization:
+--------------------------------------
     //Creating new Telekinesis client
     var tsClient = new tsjs.Client('localhost', 3000);
     
@@ -20,18 +19,23 @@ ______________________________________________
     tsClient.scene.onAddEntities = MyGraphicEngineAddObject;
     tsClient.scene.onRemoveEntities = MyGraphicEngineRemoveObject;
     
-If you need to invoke action, for example on key pressed:
+Player action invokation
+------------------------
+This is code to execute on key pressed:
     
     this.networkClient.emitAction(this.networkClient.playerId, 'moveKeyDown');
 
-To run game server it`s enought to have 4 lines of code on server side:
+Game server
+-----------
+4 lines of code needed on server side:
 
     var tsjs = require('../../../dist/tsserver');
     var server = tsjs.Server.createServer('3000');
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
 
-
+Rules of building game player classes:
+--------------------------------------
 - All game classes that contains game logic have to be universal for server and client;-
 - When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;-
 - Actions applicable to objects are described in game objects as array of functions called {actions};-
