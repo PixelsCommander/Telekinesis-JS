@@ -1,0 +1,42 @@
+{
+    "name": "ts",
+    "version": "0.0.0",
+    "description": "Universal and simple library for multiplayer games development in JavaScript",
+    "main": "index.js",
+    "directories": {
+        "doc": "doc",
+        "example": "examples"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-jsdoc": "",
+        "grunt-contrib-jshint": "~0.6.0",
+        "grunt-contrib-nodeunit": "~0.2.0",
+        "grunt-contrib-uglify": "~0.2.2",
+        "grunt-contrib-watch": "",
+        "grunt-contrib-concat": "",
+        "grunt-karma": "",
+        "express": "",
+        "socket.io":""
+
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/telekinesisjs/Telekinesis-JS.git"
+    },
+    "keywords": [
+        "network",
+        "gaming",
+        "multiplayer",
+        "game",
+        "library"
+    ],
+    "author": "Telekinesis-JS",
+    "license": "BSD",
+    "bugs": {
+        "url": "https://github.com/telekinesisjs/Telekinesis-JS/issues"
+    }
+}

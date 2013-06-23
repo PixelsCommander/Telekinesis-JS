@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/lib/jquery-1.8.2.min.js"></script>
+    <script src="js/lib/flash.js"></script>
+    <script src="js/gameui.js"></script>
+    <script src="js/gameapp.js"></script>
+    <script src="js/clientnetworklogic.js"></script>
+    <script src="js/lib/underscore.js"></script>
+    <script src="../../../dist/tsclient.js"></script>
+    <script src="js/field.js"></script>
+    <script src="../universal/car.js"></script>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <meta name="viewport" content="width=device-width user-scalable=no maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>
+<script>
+    var widnowHeight = window.parent ? window.parent.innerHeight :window.innerHeight;
+    window.UIscale = Math.ceil(widnowHeight / 320);
+    window.UIscale = Math.max(1, window.UIscale);
+    window.initGame = function(){
+        if (window.gameapp !== undefined){
+            return;
+        }
+        var gameapp = new Game('#gameCanvas', {serverURL:'localhost'});
+    };
+
+</script>
+<body style="display:block;">
+<div id="gameContainer">
+    <div id="canvasContainer">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+</div>
+<script type="text/javascript">
+    window.initGame();
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "assetsData":[
+        {
+            "url":"./assets/%scale%/cars/1.png",
+            "id":"car",
+            "width":105,
+            "height":96
+        },
+        {
+            "url":"./assets/%scale%/cars/deserttile.png",
+            "id":"deserttile"
+        }
+	]
+}

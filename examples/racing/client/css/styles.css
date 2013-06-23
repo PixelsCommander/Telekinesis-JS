@@ -1,0 +1,74 @@
+html, body{
+    height: 100%;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+body
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: 'SportsWorld';
+}
+
+body * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*[height=auto]{
+    height: auto !important;
+}
+
+*[width=auto]{
+    width: auto !important;
+}
+
+img {
+    border: 0px;
+}
+
+#gameContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#gameCanvas {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    /* using CSS3 Transitions with all vendors prefixes */
+    /* for IE10, Chrome & Safari, Firefox, Opera */
+    -ms-transition-property: all;
+    -ms-transition-duration: 1s;
+    -ms-transition-timing-function: ease;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-property: all;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease;
+    -o-transition-property: all;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease;
+
+    transition-property: all;
+    transition-duration: 1s;
+
+    -ms-backface-visibility: visible;
+    -ms-transform-origin: 50% 50%;
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin-x: 50%;
+    -webkit-transform-origin-y: 50%;
+    -moz-backface-visibility: visible;
+    -moz-transform-origin: 50% 50%;
+
+    backface-visibility: visible;
+    transform-origin: 50% 50%;
+}
