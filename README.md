@@ -1,5 +1,5 @@
-Telekinesis-JS
-==============
+Telekinesis
+===========
 
 JavaScript multiplayer game engine. Using Node.JS for server and any graphic library for client-side.
 
@@ -33,12 +33,11 @@ Simple example of game object class:
       }
     ];
 
-Car.prototype['enumerable'] = ['x', 'y', 'speed'];
-Car.prototype['sync'] = ['x', 'y'];
+    Car.prototype['enumerable'] = ['x', 'y', 'speed'];
+    Car.prototype['sync'] = ['x', 'y'];
 
 To run game server it`s enought to have 4 lines of code on server side:
     var tsjs = require('../../../dist/tsserver');
     var server = tsjs.Server.createServer('3000');
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
-    
