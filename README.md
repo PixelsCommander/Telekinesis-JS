@@ -25,7 +25,7 @@ This is code to execute on key pressed:
     
     this.networkClient.emitAction(this.networkClient.playerId, 'moveKeyDown');
     
-This will notify server and other players about actions.
+This will notify server and other players about action.
 
 Game server
 -----------
