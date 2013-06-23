@@ -30,11 +30,11 @@ To run game server it`s enought to have 4 lines of code on server side:
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
 
-All game classes that contains game logic have to be universal for server and client;
-When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;
-Actions applicable to objects are described in game objects as array of functions called {actions};
-Names of properties that have to be synchronized during adding objet to scene have to be enumerated as array of strings called {enumerable};
-Names of propeties that needs synchronization have to be enumerated as strings in array called {sync}.
+- All game classes that contains game logic have to be universal for server and client;-
+- When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;-
+- Actions applicable to objects are described in game objects as array of functions called {actions};-
+- Names of properties that have to be synchronized during adding objet to scene have to be enumerated as array of strings called {enumerable};-
+- Names of propeties that needs synchronization have to be enumerated as strings in array called {sync}.-
 
 Simple example of game object class:
 
