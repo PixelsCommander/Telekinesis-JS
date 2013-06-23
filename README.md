@@ -1,4 +1,4 @@
-![Image](./blob/master/assets/telekinesislogo.png?raw=true)
+![Image](../../blob/master/assets/telekinesislogo.png?raw=true)
 
 JavaScript multiplayer game engine. Using Node.JS for server and any graphic library for client-side.
 
