@@ -5,7 +5,7 @@ JavaScript multiplayer game engine. Using Node.JS for server and any graphic lib
 
 Why Telekinesis?
 ----------------
-It`s easy way to build structured and well syncronized client-server games. 
+It`s easy way to build <b>structured</b> and well <b>synchronized</b> client-server games.
 BTW racing example uses only 20 lines of networking code.
 
 Getting started
@@ -24,6 +24,8 @@ Player action invokation
 This is code to execute on key pressed:
     
     this.networkClient.emitAction(this.networkClient.playerId, 'moveKeyDown');
+    
+This will notify server and other players about actions.
 
 Game server
 -----------
@@ -34,7 +36,7 @@ Game server
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
 
-Rules of building game player classes:
+Rules of building game objects classes
 --------------------------------------
 - All game classes that contains game logic have to be universal for server and client;-
 - When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;-
@@ -42,7 +44,7 @@ Rules of building game player classes:
 - Names of properties that have to be synchronized during adding objet to scene have to be enumerated as array of strings called {enumerable};-
 - Names of propeties that needs synchronization have to be enumerated as strings in array called {sync}.-
 
-Simple example of game object class:
+Example class represents game player:
 
     var Car = function(){
       this.x = 0;
