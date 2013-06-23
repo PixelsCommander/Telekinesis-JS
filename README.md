@@ -36,7 +36,7 @@ Game server
     server.gameClasses['Car'] = require('../universal/car').Car;
     server.playerClass = 'Car';
 
-Rules of building game objects classes
+Building game objects classes
 --------------------------------------
 - All game classes that contains game logic have to be universal for server and client;-
 - When player invokes action by pressing a button or moving mouse - action sends to server and then to other players;-
