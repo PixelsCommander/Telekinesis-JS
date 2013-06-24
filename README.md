@@ -10,7 +10,7 @@ BTW racing example uses only 20 lines of networking code.
 
 Getting started
 ===============
-Client scene initialization:
+Client scene initialization
 --------------------------------------
     //Creating new Telekinesis client
     var tsClient = new tsjs.Client('localhost', 3000);
