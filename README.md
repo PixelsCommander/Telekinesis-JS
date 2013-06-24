@@ -61,7 +61,15 @@ Example class represents game player:
       }
     ];
 
-    Car.prototype['enumerable'] = ['x', 'y', 'speed'];
-    Car.prototype['sync'] = ['x', 'y'];
+    Car.prototype.enumerable = ['x', 'y', 'speed'];
+    Car.prototype.sync = ['x', 'y'];
+    
+Scene updating
+--------------
+Scene updates with executing <b>update</b> method of every it`s object. For our example it can be:
+
+    Car.prototype.update = function(){
+        this.x += this.speed;
+    }
     
 You can continue with launching and exploring racing example.
